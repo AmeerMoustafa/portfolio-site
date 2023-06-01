@@ -19,33 +19,34 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact" class="scroll-smooth">Contact</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
 <div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
 <!----Homepage---->
-    <section id="Home" class="h-screen w-screen grid grid-cols-2 place-items-center snap-start">
+    <section id="Home" class="h-screen w-screen justify-items-center snap-start grid grid-cols-1 md:grid-cols-2 place-content-center place-items-center snap-start gap-20">
         
         <div class="text-notgrey-grey text-center">
             <h1 class="text-7xl font-mono font-bold">Ameer Moustafa</h1>
             <h2 class="text-4xl font-mono tracking-wide">Web Developer</h2>
         </div>
-        <img class="col-start-2 h-3/5 w-5/5 justify-self-center" src="./img/splash/home.svg" alt="splash-illustration">
+        <img class="col-start-1 md:col-start-2 justify-self-center h-5/5 w-5/5 md:col-start-2 md:h-4/5 w-4/5" src="./img/splash/home.svg" alt="splash-illustration">
     </section>
 
 <!----About---->
 <section id="About" class="h-screen w-screen grid grid-cols-2 snap-start place-items-center">
-    <img class="col-start-1 justify-self-start self-end" src="./img/splash/whoami.svg" alt="whoami-illustration">
-    <div class="text-notgrey-grey text-center col-start-2 h-1/5 w-3/5">
-        <p class="font-rubik">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <img class="md:block hidden md:col-start-1 md:justify-self-start md:self-end" src="./img/splash/whoami.svg" alt="whoami-illustration">
+    <div class="text-notgrey-grey text-center col-span-2 w-3/5 md:h-1/5 md:col-start-2">
+        <p class="font-rubik">Greetings, Hello and welcome to my Portfolio! My name is Ameer Moustafa, I am a Web Developer based in Beirut, Lebanon. I am a creative individual with a passion for creating and building, I've found few things more satisfying than watching something come to life under my keystrokes. I'm also a huge advocate for open-source software</p><br><br>
+        <p class="font-rubik">I've always been a fan of open-source software, Linux and the tech world in general long before I decided to persue tech as a career.</p>
     </div>
 </section>
 <!----Skills--->
-    <section id="Skills" class="h-screen w-screen grid grid-cols-2 place-items-center snap-start">
+    <section id="Skills" class="h-screen w-screen grid grid-cols-2 place-content-center snap-start">
         
-        <div class="h-2/5 w-2/5 flex flex-row flex-wrap justify-between content-center gap-10">
+        <div class="h-5/5 w-5/5 md:h-2/5 md:w-2/5 flex flex-row flex-wrap gap-10 col-span-2 md:col-span-1 place-content-center">
             <img class="h-1/5 w-1/5" src="./img/icons/html5-color.svg">
             <img class="h-1/5 w-1/5" src="./img/icons/css3-color.svg">
             <img class="h-1/5 w-1/5" src="./img/icons/javascript-color.svg">
@@ -55,13 +56,12 @@
             <img class="h-1/5 w-1/5" src="./img/icons/nodedotjs-color.svg">
             <img class="h-1/5 w-1/5" src="./img/icons/linux-color.svg">
             <img class="h-1/5 w-1/5" src="./img/icons/git-color.svg">
-
         </div>
-        <img class="col-start-2 h-3/5 w-3/5 self-end" src="./img/splash/skills.svg" alt="skills-illustration">
+        <img class="md:col-start-2 md:h-3/5 md:w-3/5 md:self-end" src="./img/splash/skills.svg" alt="skills-illustration">
     </section>
 
 <!----Projects---->
-    <section id="Projects" class="h-screen w-screen flex flex-row flex-wrap place-content-center snap-start gap-10">
+<section id="Projects" class="md:h-screen md:w-screen flex flex-row flex-wrap place-content-center snap-start gap-10">
         
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="https://forbidden-startpage.pages.dev/" target>
