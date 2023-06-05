@@ -7,13 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <script src="./scripts/navbar.js" defer></script>
     <title>Ameer's Portfolio</title>
 </head>
 <body class="bg-dark-indigo">
 
 <!----Navbar---->
     <header class="flex justify-end fixed top-0 left-0 right-0 mb-30">
-        <nav class=" mr-8 mt-6">
+        <button id="hamburger-button" class="text-3xl md:hidden">
+            <div class="space-y-2">
+                <span class="block w-5 h-0.5 bg-gray-600"></span>
+                <span class="block w-8 h-0.5 bg-gray-600"></span>
+                <span class="block w-8 h-0.5 bg-gray-600"></span>
+              </div>
+        </button>
+        <nav class=" mr-8 mt-6 hidden md:block">
             <ul class="inline-flex gap-10 text-aliexpress-white font-rubik text-center text-lg">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -22,6 +30,15 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
+    <section id="mobile-menu" class="absolute top-0b bg-dark-indigo w-full text-5xl flex flex-col justify-content-center origin-top animate-open-menu hidden">
+    <nav class="flex flex-col min-h-screen items-center py-8">
+        <a href="#Home" class="w-full text-center py-6 text-aliexpress-white font-rubik hover:opacity-90 ">Home</a>
+        <a href="#About" class="w-full text-center py-6 text-aliexpress-white font-rubik hover:opacity-90">About</a>
+        <a href="#Skills" class="w-full text-center py-6 text-aliexpress-white font-rubik hover:opacity-90">Skills</a>
+        <a href="#Projects" class="w-full text-center py-6 text-aliexpress-white font-rubik hover:opacity-90">Projects</a>
+        <a href="#Contact" class="w-full text-center py-6 text-aliexpress-white font-rubik hover:opacity-90">Contact</a>
+    </nav>
+    </section>
     </header>
 
 <div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
