@@ -708,10 +708,6 @@ select {
   grid-column: span 2 / span 2;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -740,20 +736,12 @@ select {
   margin-top: 5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -776,10 +764,6 @@ select {
   height: 20%;
 }
 
-.h-2\/5 {
-  height: 40%;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -788,20 +772,12 @@ select {
   height: 100vh;
 }
 
-.h-3\/5 {
-  height: 60%;
-}
-
-.h-full {
-  height: 100%;
+.h-2\/5 {
+  height: 40%;
 }
 
 .w-1\/5 {
   width: 20%;
-}
-
-.w-2\/5 {
-  width: 40%;
 }
 
 .w-3\/5 {
@@ -820,8 +796,8 @@ select {
   width: 100vw;
 }
 
-.w-full {
-  width: 100%;
+.w-2\/5 {
+  width: 40%;
 }
 
 .max-w-sm {
@@ -888,12 +864,12 @@ select {
   gap: 2.5rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -902,34 +878,18 @@ select {
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-20 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+.place-self-center {
+  place-self: center;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .justify-self-center {
@@ -1040,11 +1000,6 @@ select {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1182,10 +1137,6 @@ select {
     display: block;
   }
 
-  .md\:grid {
-    display: grid;
-  }
-
   .md\:h-1\/5 {
     height: 20%;
   }
@@ -1222,10 +1173,6 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
   .md\:place-items-center {
     place-items: center;
   }
@@ -1246,10 +1193,5 @@ select {
 
   .md\:justify-self-start {
     justify-self: start;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
